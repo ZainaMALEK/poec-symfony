@@ -1,5 +1,9 @@
 package main
 
+import (
+	"fmt"
+)
+
 func isPalindrome(mot string) bool {
 	size := len(mot)
 
@@ -14,6 +18,20 @@ func isPalindrome(mot string) bool {
 	return isPalindrome(mot[1 : size-1])
 }
 
+// go run palindrome.go
+
 func main() {
-	println(isPalindrome("radar"))
+	var m string
+
+	fmt.Print("Entrer mot : ")
+	fmt.Scanf("%s", &m)
+	fmt.Printf("%s", m)
+
+	if isPalindrome(m) {
+		fmt.Print(" est ")
+	} else {
+		fmt.Print(" n'est pas ")
+	}
+
+	fmt.Println("un palindrome.")
 }
