@@ -1,14 +1,103 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact</title>
 </head>
+
 <body>
 
-        
+    <form action="" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="firstname">Prénom</label>
+            <input type="text" id="firstname" name="firstname" value="John" required />
+        </div>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="nb_personne">Nombre de personne</label>
+            <input type="number" name="nb_personne" id="nb_personne">
+        </div>
+
+        <div>
+            <label for="birthdate">Date de naissance</label>
+            <input type="date" name="birthdate" id="birthdate">
+        </div>
+
+        <div>
+            <label for="message">Message</label>
+            <textarea name="message" placeholder="Saisissez un message..." id="message" cols="30" rows="3"></textarea>
+        </div>
+
+        <select name="pays" id="pays" multiple size="2">
+            <option value="1">France</option>
+            <option value="2">Italie</option>
+            <option value="3">Espagne</option>
+            <option value="4">Chine</option>
+        </select>
+
+        <select name="categorie" id="categorie">
+            <option value="0">Choisir</option>
+            <optgroup label="DVD">
+                <option value="1">Harry Potter</option>
+                <option value="2" selected>Le seigneur des anneaux</option>
+            </optgroup>
+            <optgroup label="Livre">
+                <option value="12">Picsou</option>
+                <option value="43">Death Note</option>
+            </optgroup>
+        </select>
+
+        <div>
+            <input type="radio" name="gender">
+            <label>Homme</label>
+
+            <input type="radio" name="gender" checked>
+            <label>Femme</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="cgv">
+            <label>CGV</label>
+        </div>
+
+        <div>
+            <label for="fruit">Taper un fruit</label>
+            <input type="text" list="fruits" name="fruit" id="fruit">
+
+            <datalist id="fruits">
+                <option value="Kiwi" />
+                <option value="Pomme" />
+                <option value="Orange" />
+                <option value="Mangue" />
+                <option value="Banane" />
+                <option value="Tomate" />
+                <option value="Fraise" />
+                <option value="Framboise" />
+            </datalist>
+        </div>
+
+        <div>
+            <label for="prix">Prix</label>
+            <input type="range" id="prix" name="prix" min="0" max="100">
+        </div>
+
+        <input type="color" name="color">
+
+        <div>
+            <input type="file">
+        </div>
+
+        <button type="submit">Envoyer</button>
+    </form>
 
 </body>
+
 </html>
