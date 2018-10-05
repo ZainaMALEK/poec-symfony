@@ -23,7 +23,6 @@ body {
 }
 
 p,
-div,
 .demo-titre,
 #titre {
     font-style: italic;
@@ -47,10 +46,39 @@ div,
     color: inherit;
     padding: 4px;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 3px;
     transition: background-color 0.3s ease-in;
 }
 
 .menu a:hover {
     background-color: darkcyan;
+}
+
+.mybox {
+    height: 50px;
+    width: 50px;
+    background-color: royalblue;
+    color: #FFF;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.mybox::before {
+    position: absolute;
+    content: '\25BA';
+    height: 50px;
+    width: 50px;
+    background-color: #000;
+    opacity: 0;
+    border-radius: inherit;
+    display: block;
+    transition: opacity 0.4s ease-in;
+}
+
+.mybox:hover::before {
+    opacity: 0.8;
+    cursor: pointer;
 }
