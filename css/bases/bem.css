@@ -1,0 +1,58 @@
+body {
+    font-family: sans-serif;
+}
+
+.box {
+    border: 1px solid #CCC;
+    margin-bottom: 10px;
+}
+
+.box-title,
+.box-content {
+    padding: 10px;
+}
+
+.box-title {
+    margin: 0;
+}
+
+.box-title-blue {
+    color: royalblue;
+}
+
+.box-sep {
+    border: none;
+    height: 1px;
+    background-color: #CCC;
+    margin: 0;
+}
+
+.box-content {}
+
+.btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin: 0;
+    border: 1px solid rgb(23, 23, 194);
+    background-color: royalblue;
+    color: white;
+    font: inherit;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    line-height: 1rem;
+    transition: background-color .3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: rgb(117, 148, 241);
+}
+
+.btn-orange {
+    border-color: rgb(255, 99, 42);
+    background-color: orangered;
+}
+
+.btn-orange:hover {
+    background-color: rgb(255, 99, 42);
+}
